@@ -93,9 +93,7 @@ Careful. At this point, you must decide whether your changes should be merged wi
   ```
   Afterwards, you can follow the same steps to push changes to the new branch. 
 - **Forking:** Go to the original repository on GitHub and click the Fork button to create your own fork. This will create a copy of the original repository under your GitHub account. First, check your current remote setup with `git remote -v`.
-  <br>Right now, your local clone is probably still linked to the original repository (not your new fork). You need to change the origin remote to point to your fork. 
-  ```
-  You will see something like:
+  <br>Right now, your local clone is probably still linked to the original repository (not your new fork). You need to change the origin remote to point to your fork. You will see something like:
   ```
   origin  https://github.com/lauramuras99/DwellTimeAnalysis.git (fetch)
   origin  https://github.com/lauramuras99/DwellTimeAnalysis.git (push)
@@ -119,7 +117,7 @@ Careful. At this point, you must decide whether your changes should be merged wi
   
   ---
 
-### Do I always have to update my fork with all changes from the main branch?
+### Do I always have to update my code with all changes from the main branch?
 No :) Git has a really nice cherry-picking feature that allows you to incorporate only specific commits from the updated main branch or even another fork without merging everything.
 <br>Selective merging from the main branch without affecting other custom modifications:
 ```
