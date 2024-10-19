@@ -49,7 +49,7 @@ This is just a suggestion — feel free to set it up according to your needs.
 
 ### Basic Git commands:
 This is just a quick first guide. Detailed explanations and instructions will be provided in separate files in this repo (or, again, ask ChatGPT 😉).
-<br> I
+
 - **Clone a repository**: Download a repository locally. You can do this directly from GitHub (as a ZIP file) or using any command line or terminal of your system (the command will be the same in all environments)
   ```
   cd C:/path/to/your/local/repository/copy/
@@ -75,28 +75,25 @@ This is just a quick first guide. Detailed explanations and instructions will be
   ```
   git remote set-url origin https://github.com/your-username/your-repo.git
   ```
-- **Stage your changes:** Prepare changes to be included in the next commit and lets you select which changes to commit, even if multiple files have been modified.
+- **Stage your changes:** Prepare changes to be included in the next commit and select which changes to commit if multiple files have been modified.
   ```
   cd C:/path/to/your/local/repository/copy/
   git add file.py
   ```
-- **Commit your changes:** Save the changes that have been staged without pushing them to the remote yet.
+- **Commit your changes:** Save the staged changes without pushing them to the remote yet.
   ```
   git commit -m "Your commit message"
   ```
-Careful. At this point, you should decide whether your changes should be merged with the main branch or in a separate branch, or whether the code has now been modified and tailored so specifically to your application that you might want to fork the repository. Read up on branching and forking.
+Careful. At this point, you must decide whether your changes should be merged with the main branch or in a separate branch or whether the code has been modified and tailored so specifically to your application that you might want to fork the repository. Read up on branching and forking.
 
-- **Branching:** If you are working on a new feature that might be interesting to others, consider creating a new branch.
+- **Branching:** If you are working on a new feature that might be interesting to others, consider creating a new branch. The following shorthand command creates a new branch called new-feature-branch and immediately switches to it.
+
   ```
-  git branch new-branch
   git checkout -b new-feature-branch
   ```
-  Afterwards, you can follow the same steps to push changes to the new branch.
-
-- **Forking:** Go to the original repository on GitHub and click the Fork button to create your own fork. This will create a copy of the original repository under your GitHub account. First, check your current remote setup:
+  Afterwards, you can follow the same steps to push changes to the new branch. 
+- **Forking:** Go to the original repository on GitHub and click the Fork button to create your own fork. This will create a copy of the original repository under your GitHub account. First, check your current remote setup with `git remote -v`.
   <br>Right now, your local clone is probably still linked to the original repository (not your new fork). You need to change the origin remote to point to your fork. 
-    ```
-  git remote -v
   ```
   You will see something like:
   ```
@@ -107,9 +104,26 @@ Careful. At this point, you should decide whether your changes should be merged 
   ```
   git remote set-url origin https://github.com/your-username/forked-repo.git
   ```
-  and verify the change again with `git remote -v`
+  and verify the change again with `git remote -v`.
 
 - **Push your changes:** Upload those changes to the remote repository so others can access and collaborate on them.
   ```
   git push origin main
   ```
+- After working on a fork for quite some time, you might want to cleanly integrate all updates from the main branch without overwriting your own work. This is achieved by **rebasing**.
+  To rebase a forked repository onto the latest version of the main repository to integrate new changes while keeping your own modifications, run 
+  ```
+  git fetch origin
+  git rebase origin/main
+  ```
+  
+  ---
+
+### Do I always have to update my fork with all changes from the main branch?
+No :) Git has a really nice cherry-picking feature that allows you to incorporate only specific commits from the updated main branch or even another fork without merging everything.
+<br>Selective merging from the main branch without affecting other custom modifications:
+```
+git fetch origin
+git cherry-pick <commit-hash>
+  ```
+  
