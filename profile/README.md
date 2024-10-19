@@ -8,7 +8,7 @@ so please take a minute to familiarise yourself with GitHub and try your best to
 <br><br>This document explains the basic structure and functions of our organisation and the rules to ensure smooth collaboration. 
 <br>First, you need to download and install Git locally on your machine to sync your work with remote GitHub repositories: 
 <br>[https://git-scm.com/downloads](https://git-scm.com/downloads)
-<br>Additionally, if you haven't already done so, please create your own GitHub account [here](https://github.com/). You will then be invited to become a member of the organisation. This is the only way we can manage the onboarding and offboarding of individuals, the soon-to-be mandatory 2FA, as well as the security of all repositories and the Nanoscience GitHub account. Thank you!
+<br><br>Additionally, if you haven't already done so, please create your own GitHub account [here](https://github.com/). You will then be invited to become a member of the organisation. This is the only way we can manage the onboarding and offboarding of individuals, the soon-to-be mandatory 2FA, as well as the security of all repositories and the Cellnano GitHub account. Thank you!
 
 ---
 
