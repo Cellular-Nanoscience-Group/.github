@@ -61,7 +61,7 @@ This is just a quick first guide. Detailed explanations and instructions will be
   git pull origin main
   ```
   **main:** Refers to the stable main branch.
-  <br>**origin:** Refers to the the remote URL of the repository you cloned from (`origin` is a default alias that does NOT need to be changed to the actual repository  name).
+  <br>**origin:** Refers to the remote URL of the repository you cloned from (`origin` is a default alias that does NOT need to be changed to the actual repository  name).
   <br>To check what the current remote the `origin` alias is pointing to, use:
   ```
   git remote -v
@@ -75,18 +75,18 @@ This is just a quick first guide. Detailed explanations and instructions will be
   ```
   git remote set-url origin https://github.com/your-username/your-repo.git
   ```
-- **Stage your changes:** Prepares changes to be included in the next commit and lets you select which changes to commit, even if multiple files have been modified.
+- **Stage your changes:** Prepare changes to be included in the next commit and lets you select which changes to commit, even if multiple files have been modified.
   ```
   cd C:/path/to/your/local/repository/copy/
   git add file.py
   ```
-- **Commit your changes:** Saves the changes that have been staged without pushing them to the remote yet.
+- **Commit your changes:** Save the changes that have been staged without pushing them to the remote yet.
   ```
   git commit -m "Your commit message"
   ```
-Careful, at this point you should decide whether your changes should be merged with the main branch, in a separate branch, or whether the code has now been modified and tailored so specifically to your application that you might want to fork the repository. Read up on branching and forking.
+Careful. At this point, you should decide whether your changes should be merged with the main branch or in a separate branch, or whether the code has now been modified and tailored so specifically to your application that you might want to fork the repository. Read up on branching and forking.
 
-- **Branching:** If you are working on a new feature that might be interesting to others, consider creating a new branch before making changes.
+- **Branching:** If you are working on a new feature that might be interesting to others, consider creating a new branch.
   ```
   git branch new-branch
   git checkout -b new-feature-branch
