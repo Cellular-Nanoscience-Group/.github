@@ -20,7 +20,7 @@ Each setup has its own repository:
 - **Aalo**
 
 In addition, the repository **General** is intended for all scripts or data analysis-related files used across different setups (for example, PyOTic for all optical tweezers) or that would be useful for other lab members independent of their project (feel free to share your ideas!).
-<br>**.github** and **.github-private** are special repositories that create a landing page for the public and members of the GitHub organisation, respectively. Once you have signed up with your account, **.github-private** will provide you with further information on how to use this platform.
+<br>**.github** and **.github-private** are special repositories that create a landing page for public visitors and members of the GitHub organisation, respectively. Once you have signed up with your account, **.github-private** will provide you with further information on how to use this platform.
 <br>In general, everybody here has at least write permission, so you can not only download or update code but also adjust/optimise the structure of repositories and folders over time.
 
 ## Repository structure (suggestion)
