@@ -6,7 +6,7 @@ The purpose of this platform is to transform our current code chaos into a struc
 so please take a minute to familiarise yourself with GitHub and try your best to keep order in the individual repositories.
 <p>As a first little hint: For every difficulty in using GitHub, ChatGPT is always ready to guide you through step by step :)
 <p>This document explains the basic structure and functions of our organisation and the rules to ensure smooth collaboration. 
-<br>First, you need to download and [install Git](https://git-scm.com/downloads) locally on your machine to sync your work with remote GitHub repositories.
+<br>First, you need to download and [install Git](https://git-scm.com/downloads/) locally on your machine to sync your work with remote GitHub repositories.
 <p>Additionally, if you haven't already done so, please create your own GitHub account [here](https://github.com/). You will then be invited to become a member of the organisation. This is the only way we can manage the onboarding and offboarding of individuals, the soon-to-be mandatory 2FA, as well as the security of all repositories and the Cellnano GitHub account. Thank you!
 
 ---
